@@ -23,7 +23,7 @@ import Link from "next/link";
 const HomeFooter = () => {
   const year = new Date().getFullYear();
   return (
-    <Box bg={theme.colors.primary[500]} color="white">
+    <Box bg={theme.colors.primary[500]} color="white" fontSize="sm">
       <Stack>
         <SimpleGrid columns={{ base: 2, sm: 2, md: 4 }} spacing={8} p={8}>
           <Stack align={"flex-start"}>

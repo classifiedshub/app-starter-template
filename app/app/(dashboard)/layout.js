@@ -2,7 +2,7 @@ import DashboardHeader from "@/components/dashboard/header/Header";
 import DashboardSidebar from "@/components/dashboard/sidebar/Sidebar";
 import { Box, Stack } from "@chakra-ui/react";
 
-const Layout = ({ children }) => {
+const Layout = async ({ children }) => {
   return (
     <Stack direction="row" h="100vh" spacing="none">
       <DashboardSidebar />

@@ -14,12 +14,26 @@ const HomeHeader = () => {
         <Logo color="white" />
         <HStack align="center" spacing={6}>
           <Link href={loginUrl}>
-            <Button bg={theme.colors.secondary[500]} color="white" size="sm">
+            <Button
+              bg={theme.colors.secondary[400]}
+              color="white"
+              size="sm"
+              _hover={{
+                bg: theme.colors.secondary[600],
+              }}
+            >
               Login
             </Button>
           </Link>
           <Link href={registerUserUrl}>
-            <Button bg={theme.colors.secondary[500]} color="white" size="sm">
+            <Button
+              bg={theme.colors.secondary[500]}
+              color="white"
+              size="sm"
+              _hover={{
+                bg: theme.colors.secondary[600],
+              }}
+            >
               Register
             </Button>
           </Link>

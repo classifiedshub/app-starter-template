@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, Box, Center, Heading } from "@chakra-ui/react";
 import HeroSection from "@/components/pages/home/HeroSection";
 import BenefitsSection from "@/components/pages/home/BenefitsSection";
 import WhyChooseUs from "@/components/pages/home/WhyChooseUs";
@@ -7,8 +7,8 @@ import { landingPageSettings, featuresSettings, faqs } from "@/data/constants";
 
 const Homepage = () => {
   return (
-    <Stack>
-      <HeroSection
+    <Stack >
+      {/* <HeroSection
         imageUrl={landingPageSettings.heroImage}
         headline={landingPageSettings.headline}
         subheadline={landingPageSettings.subheadline}
@@ -16,7 +16,12 @@ const Homepage = () => {
       />
       <BenefitsSection />
       <WhyChooseUs features={featuresSettings} />
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} /> */}
+      <Box height="80vh">
+        <Center mt={8}>
+          <Heading fontSize="xl">HOMEPAGE</Heading>
+        </Center>
+      </Box>
     </Stack>
   );
 };
